@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Univalle20202</string>
+    <string name="btnClick">En linea</string>
+    <string name="logout">Salir</string>
+    <string name="help">Ayuda</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

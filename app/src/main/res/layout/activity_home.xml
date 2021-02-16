@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="289dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="259dp"
+        android:layout_height="95dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Valor"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="289dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volver"
+        android:text="Volver"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="479dp" />
+    <Button
+    android:id="@+id/btnContar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="contar"
+    android:text="Contar"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="161dp"
+    tools:layout_editor_absoluteY="479dp" />
+
+    <Button
+        android:id="@+id/bntColorear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="colorear"
+        android:text="Colorear"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <Button
+        android:id="@+id/btnServicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="iniciarServicio"
+        android:text="Servicio" />
+
+    <Button
+        android:id="@+id/btnVolley"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getData"
+        android:text="http" />
+    <Button
+        android:id="@+id/btnHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="iniviarVolley"
+        android:text="Volley" />
+
+    <fragment
+        android:id="@+id/nativeFragment"
+        android:name="com.example.univalle20202.BlankFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
